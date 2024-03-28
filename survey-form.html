@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Preferensi Pilpres</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Pemilu Presiden</h1>
+    <p id="description">Bantu kami meningkatkan demokrasi Indonesia.</p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <div class="form-group">
+      <label for="name" id="name-label">Nama Anda:</label>
+      <input type="text" id="name" name="name" placeholder="Masukkan nama anda" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email Anda:</label>
+      <input type="email" id="email" name="email" placeholder="contohemail@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Usia Anda:</label>
+      <input type="number" id="number" name="number" min="17" max="150" placeholder="Usia" required>
+      </div>
+      <div class="form-group">
+        <label for="dropdown" id="dropdown-label">Apa anda berpartisipasi dalam pemilu kali ini?</label>
+        <select id="dropdown" name="dropdown">
+          <option>Iya</option>
+          <option>Golput</option>
+        </select>
+      <div>
+      <div class="form-group">
+        <p>Siapa Pasangan Presiden-Wakil Presiden Pilihanmu?</p>
+        <label for="presiden-01"><input type="radio" id="presiden-01" name="presiden" value="01">Anies - Muhaimin</label>
+        <label for="presiden-02"><input type="radio" id="presiden-02" name="presiden" value="02">Prabowo - Gibran</label>
+        <label for="presiden-03"><input type="radio" id="presiden-03" name="presiden" value="03">Ganjar - Mahfud</label>
+      </div>
+      <div class="form-group">
+        <p>Apa pertimbangan anda memilih pasangan tersebut?</p>
+        <label for="kriteria1"><input type="checkbox" id="kriteria1" name="kriteria" value="kriteria1">Figur</label>
+        <label for="kriteria2"><input type="checkbox" id="kriteria2" name="kriteria" value="kriteria2">Rekam Jejak</label>
+        <label for="kriteria3"><input type="checkbox" id="kriteria3" name="kriteria" value="kriteria3">Partai Pengusung</label>
+        <label for="kriteria4"><input type="checkbox" id="kriteria4" name="kriteria" value="kriteria4">Kekayaan</label>
+      </div>
+      <div class="form-group">
+        <label for="komentar">Apakah ada kriteria lain?</label><textarea id="komentar" name="komentar" rows="3" placeholder="tulis komentar anda disini..."></textarea>
+      </div>
+      <button type="submit" id="submit">Submit Pilihanmu</button>
+    </form>
+  </main>
+</body>
+</html>
+
